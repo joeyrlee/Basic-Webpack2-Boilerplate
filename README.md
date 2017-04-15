@@ -4,3 +4,4 @@ A basic Webpack 2 boilerplate with functional ES6 minification (thanks to fulls1
 
 Successful `yarn (or npm) run build-prod` production/minify build:
 <img src="Webpack Build Demo.png" title="Successful production/minify build" />
+(disregard the loaderUtils DeprecationWarning; https://github.com/webpack/loader-utils/issues/56)
