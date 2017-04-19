@@ -6,19 +6,22 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      },
+      {
         test: /\.js$/,
-        exclude: /node_modules/,
         loader: 'babel-loader',
         options: { 
           presets: [ 
             [ 'es2015', { modules: false } ] 
           ] 
         }
-      },
-      {
-        test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
       }
     ]
+  },
+  devServer: {
+    historyApiFallback: true,
+    noInfo: true
   }
 }
