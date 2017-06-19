@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "webpack practice",
   "main": "src/app.js",
+  "scripts": {
+    "dev": "webpack-dev-server --progress --open --hot",
+    "build": "webpack -p --progress"
+  },
   "repository": "https://github.com/joeyrlee/webpack-practice",
   "author": "joeyrlee",
   "license": "MIT",
